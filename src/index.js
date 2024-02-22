@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import ShoeListItem from './component/ExShoeStore/ShoeListItem';
+import CartShoe from './component/ExShoeStore/CartShoe';
+import ExShoeStore from './component/ExShoeStore/ExShoeStore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className='container'>
+    <h1 className=' text-center mt-3'>Shoes Shop</h1>
+    <ExShoeStore />
+     
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
